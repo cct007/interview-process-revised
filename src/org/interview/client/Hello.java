@@ -203,7 +203,7 @@ public class Hello implements EntryPoint {
 		countCallButton.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
-            	countCallService.countCall(null, new AsyncCallback<PersonInfo>() {
+            	countCallService.countCall(numberOfCompletedCall, new AsyncCallback<Integer>() {
 			        @Override
 			        public void onFailure(Throwable caught) {
 			            caught.printStackTrace();
